@@ -1,0 +1,111 @@
+        body{
+            background-image: url('/images/tree.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li{
+            list-style-type: circle;
+        }
+        a{
+            color: #2C93FF;
+            text-decoration: none;
+        }
+        a:hover, a:focus {
+            /*color: #1084FF;*/
+            color: #FFFFFF;
+        }
+        #path{
+            color: #FFFFFF;
+            z-index: 40;
+            position: fixed;
+        }
+        #socialmedialinks{
+            z-index:39;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+        .main{
+            height: auto;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            position: absolute;
+            top: 0;
+            width: auto;
+        }
+        .cover{
+            position: fixed;
+            opacity: 1;
+            background-color: rgba(0,0,0,.6);
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .cover.black{
+            background-color: rgba(0,0,0,.6);
+        }
+        .logo-container .logo{
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid #333333;
+            width: 60px;
+            float: left;
+        }
+        .main .logo{
+            color: #FFFFFF;
+            font-size: 56px;
+            font-weight: 300;
+            position: relative;
+            text-align: left;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+            margin-top: 150px;
+            z-index: 3;
+        }
+        .main .content{
+            position: relative;
+            z-index: 4;
+            margin-left: 120px;
+            margin-right: 120px;
+        }
+        .main .motto{
+            min-height: 140px;
+        }
+        .main .motto, .main .info-text, .main .subscribe .info-text{
+            color: #FFFFFF;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+            text-align: left;
+            margin-top: 50px;
+        }
+        .main .subscribe .info-text{
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .notes{
+            color: #FFFFFF;
+            overflow: auto;
+        }
+        .footer{
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+            width: 100%;
+            color: #AAAAAA;
+            z-index: 2;
+            text-align: right;
+            margin-top: 50px;
+            font-family: 'Grand Hotel',cursive;
+        }
+        .footer a{
+            color: #FFFFFF;
+        }
+        @media (min-width:991px){
+            .footer{
+                position: fixed;
+                bottom: 20px;
+            }
+        }
