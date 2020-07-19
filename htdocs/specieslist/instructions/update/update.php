@@ -1,18 +1,17 @@
-<?php require '../../include/standardscript.php'; ?>
+<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head><?php require '../../include/head.php'; ?>
+<head><?php require '../../../include/head.php'; ?>
 </head>
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../include/navigation.php'; ?>
+        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
         </div>
         <div class="cover black" data-color="black"></div>
         <div class="container">
             <div class="content">
-                <p><br/></p><p><br/></p><h2 class="notes">Species List Program download and install instructions</h2>
-                <p class="notes">for Windows users (Mac users will need to translate... sorry)</p><p><br/></p>
+                <p><br/></p><p><br/></p><h2 class="notes">Species List Program update instructions</h2><p><br/></p>
                 <ol class="notes">
                     <li class="notes">click on '<a href="/downloads/specieslist.zip">Species List Program (zip file)</a>' to download</li>
                     <li class="notes">make note of download location, if you missed the location it's probably in the 'downloads' folder</li>    
@@ -66,7 +65,7 @@
                 <p><br/></p><div class="subscribe"></div>
             </div>
         </div>
-        <div class="footer"><?php require '../../include/footer.php'; ?>
+        <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>
     </div>
 </body>

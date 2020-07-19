@@ -1,12 +1,12 @@
-<?php require '../../include/standardscript.php'; ?>
+<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head><?php require '../../include/head.php'; ?>
+<head><?php require '../../../include/head.php'; ?>
 </head>
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../include/navigation.php'; ?>
+        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
         </div>
         <div class="cover black" data-color="black"></div>
         <div class="container">
@@ -31,7 +31,7 @@
                 <p><br/></p><div class="subscribe"></div>
             </div>
         </div>
-        <div class="footer"><?php require '../../include/footer.php'; ?>
+        <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>
     </div>
 </body>

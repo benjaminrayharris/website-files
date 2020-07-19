@@ -1,24 +1,25 @@
-<?php require '../../include/standardscript.php'; ?>
+<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head><?php require '../../include/head.php'; ?>
+<head><?php require '../../../include/head.php'; ?>
 </head>
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../include/navigation.php'; ?>
+        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
         </div>
         <div class="cover black" data-color="black"></div>
         <div class="container">
             <div class="content">
-                <p><br/></p><p><br/></p><h2 class="notes">Species List Program update instructions</h2><p><br/></p>
+                <p><br/></p><p><br/></p><h2 class="notes">Species List Program Excel macro</h2>
+                <p class="notes">... for Windows users (Mac users will need to translate... sorry)</p><p><br/></p>
                 <ol class="notes">
                     <li class="notes">click on '<a href="/downloads/specieslist.zip">Species List Program (zip file)</a>' to download</li>
                     <li class="notes">make note of download location, if you missed the location it's probably in the 'downloads' folder</li>    
                     <li class="notes">move specieslist.zip to the folder where you want the program folder to be
                         <ul>
                             <li class="notes">can be anywhere</li>
-                            <li class="notes">suggest moving to the user folder (like 'Richard') or documents folder</li>
+                            <li class="notes">suggest moving to the user folder (like 'Ben') or documents folder</li>
                             <li class="notes">alternatively suggest moving to desktop</li>
                         </ul>
                     </li>
@@ -65,7 +66,7 @@
                 <p><br/></p><div class="subscribe"></div>
             </div>
         </div>
-        <div class="footer"><?php require '../../include/footer.php'; ?>
+        <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>
     </div>
 </body>
