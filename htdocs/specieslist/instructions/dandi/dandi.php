@@ -1,4 +1,3 @@
-<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><?php require '../../../include/head.php'; ?>
@@ -6,68 +5,67 @@
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
-        </div>
-        <div class="cover black" data-color="black"></div>
+        <?php require '../../../include/header.php'; ?>
         <div class="container">
             <div class="content">
-                <p><br/></p><p><br/></p><h2 class="notes">Species List Program download and install instructions</h2>
-                <p class="notes">for Windows users (Mac users will need to translate... sorry)</p><p><br/></p>
-                <ol class="notes">
-                    <li class="notes">click on '<a href="/downloads/specieslist.zip">Species List Program (zip file)</a>' to download</li>
-                    <li class="notes">make note of download location, if you missed the location it's probably in the 'downloads' folder</li>    
-                    <li class="notes">move specieslist.zip to the folder where you want the program folder to be
-                        <ul>
-                            <li class="notes">can be anywhere</li>
-                            <li class="notes">suggest moving to the user folder (like 'Richard') or documents folder</li>
-                            <li class="notes">alternatively suggest moving to desktop</li>
-                        </ul>
-                    </li>
-                    <li class="notes">extract zipped folder contents to its own folder, to avoid clutter (again 'can' be anywhere)
-                        <ul>
-                            <li class="notes">right-click on specieslist.zip and select "extract all"</li>
-                            <li class="notes">'its own folder' means the program (sl.jar) should be contained in its own folder like '..\specieslist', not '..\Desktop'</li>
-                            <li class="notes">the 'extract all' process should do this automatically</li>
-                            <li class="notes">if you want to move the program later, the program (sl.jar) should not be moved by itself - instead move the folder</li>
-                        </ul>
-                    </li>
-                    <li class="notes">make sure <a href="https://java.com/en/" target="_blank">Java version 8 (or later)</a> is installed on your computer</li>
-                    <li class="notes">if needed, download a sample <a href="/downloads/sample.zip">masterlist file</a> for demonstration and/or testing
-                        <ul>
-                            <li class="notes">program needs a CSV masterlist file for initial load</li>
-                            <li class="notes">for real world use, a more current list should be used</li>
-                            <li class="notes">this 'samplemasterlist.csv' file is also zipped in a file called 'sample.zip', and might be in the 'downloads' folder</li>
-                            <li class="notes">'sample.zip' can be in any folder (doesn't matter) - right-click and select "extract all"</li>
-                            <li class="notes">'sample.zip' contains only 'samplemasterlist.csv' and doesn't matter where you extract it, but make note of where it is</li>
-                        </ul>
-                    </li>
-                    <li class="notes">*** optional ***   make a shortcut link for convenient access
-                        <ul>
-                            <li class="notes">right-click on the 'sl.jar' file and select 'Send to >> Desktop (create shortcut)'
-                                <ul>
-                                    <li class="notes">this will make shortcut link on the desktop</li>
-                                    <li class="notes">this shortcut can be moved and renamed</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="notes">*** if using the Excel macro ***  
-                        <ul>
-                            <li class="notes">after things have been moved around, make sure 'SLMacro.xlsm' is in the same folder as 'sl.jar'</li>
-                            <li class="notes">as an Excel security feature, downloaded excel macros have one-time warning - yellow ribbon at top of window
-                                <ul>
-                                    <li class="notes">click on 'enable content' to clear yellow ribbon(s) permanently for that file</li>
-                                    <li class="notes">close the file, Don't Save</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-                <p><br/></p><div class="subscribe"></div>
+                <h2>Species List Program download and install instructions</h2>
+                <div class="section">
+                    <section class="accordion"><h5>these instructions are for Windows (Mac users will need to translate... sorry)</h5></section>
+                    <section class="accordion">
+                        <h5 class="handle"><label class="inactive">click on '<a href="/download/specieslist.zip">Species List Program (zip file)</a>' to download</label></h5>
+                    </section>
+                    <section class="accordion">
+                        <h5 class="handle"><label class="inactive">make note of download location, if you missed the location it's probably in the 'downloads' folder</label></h5>
+                    </section>
+                    <section class="accordion">
+                        <h5 class="handle"><label class="active">move specieslist.zip to the folder where you want the program folder to be</label></h5>
+                        <div class="accontent">
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">can be anywhere</label></h6>
+                                <div class="accontent"></div>
+                            </section>
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">suggest moving to the user folder (like 'Richard') or documents folder</label></h6>
+                                <div class="accontent"></div>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="accordion">
+                        <h5 class="handle"><label class="active">extract zipped file contents</label></h5>
+                        <div class="accontent">
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">right-click on specieslist.zip and select "Extract All..."</label></h6>
+                            </section>
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">the default destination should be okay -- click the 'Extract' button</label></h6>
+                            </section>
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">if you want to move the program later, the program (sl.jar) should not be moved by itself - instead move the folder</label></h6>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="accordion">
+                        <div class="slightspacer"></div>
+                    </section>
+                    <section class="accordion">
+                        <h6 class="handle"><label class="inactive">make sure <a href="https://java.com/en/" target="_blank">Java version 8 (or later)</a> is installed on your computer</label></h6>
+                    </section>
+                    <section class="accordion">
+                        <h6 class="handle"><label class="inactive">if needed, download a sample <a href="../masterlist">masterlist file</a> for demonstration and/or testing</label></h6>
+                    </section>
+                    <section class="accordion">
+                        <h6 class="handle"><label class="inactive">make a <a href="../shortcut">shortcut</a> link to 'slauncher.jar' for convenient access</label></h6>
+                    </section>
+                    <section class="accordion">
+                        <h6 class="handle"><label class="inactive">details on using the <a href="../macro">Excel macro</a></label></h6>
+                    </section>
+                </div>
             </div>
+            <p><br/></p><div class="subscribe"></div>
         </div>
         <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>
     </div>
 </body>
 </html>
+        

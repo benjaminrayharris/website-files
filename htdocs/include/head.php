@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width"/>
     <title>Benjamin Harris Info</title>
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css">
-    <link href="/css/site.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Yeon Sung" rel="stylesheet">
+    <link href="/sitefiles/main.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="/sitefiles/main.js" type="text/javascript"></script>
 '; ?>

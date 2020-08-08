@@ -1,0 +1,360 @@
+        body{
+            background-image: url('/sitefiles/images/tree.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Helvetica, sans-serif;
+            color: #fff;
+            font-weight: normal;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        a{
+            color: #2C93FF;
+            text-decoration: none;
+        }
+        a:hover, a:focus {
+            /*color: #1084FF;*/
+            color: #FFFFFF;
+        }
+        h1{
+            margin-bottom: 60px;
+            margin-top: 15px;
+            font-size: 42px;
+        }
+        h2{
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 36px;
+        }
+        h3{
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 28px;
+        }
+        h4{
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 24px;
+        }
+        h5{
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        h6{
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        section{
+            position: relative;
+            left: 20px;
+        }
+        label{
+            width: auto;
+        }
+        #path{
+            color: #FFFFFF;
+            z-index: 39;
+            position: fixed;
+        }
+        #socialmedialinks{
+            z-index:41;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+        #deviceinfo{
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            color: #AAAAAA;
+            z-index: 2;
+            text-align: right;
+        }
+        #map{
+            background-color: grey;
+            width: 100%;
+            height: 100%;
+            z-index:38;
+        }             
+        #mapcontainer{
+            position: fixed;
+            top: 250px;
+            right: 20px;
+            width: 400px;
+            height: 400px;
+            z-index:37;
+        }
+        #hanoi{
+            position: fixed;
+            bottom: 150px;
+            right: 50%;
+            width: 400px;
+            height: 300px;
+            z-index: 33;
+        }
+        .disc{
+            position: absolute;
+            height: 32px;
+        }
+        .roof{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 50%;
+            /*background-image: url('/sitefiles/images/towerRoof.png');*/
+            background-size: 100% 100%;
+            background-color: transparent;
+        }
+        .base{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+        }
+        .inner{
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            width: 76%;
+            left: 12%;
+            /*background-image: url('/sitefiles/images/towerBase.png');*/
+            background-size: 100% 100%;
+        }
+        #spike{
+            position: absolute;
+            bottom: 32px;
+            width: 20%;
+            left: 40%;
+            background-size: 100% 100%;
+            /*background-image: url('/sitefiles/images/towerSpike.png');*/
+        }
+        #spark{
+            position: absolute;
+            background-size: 100% 100%;
+            background-color: transparent;
+            z-index: 35;
+            background-image: url('/sitefiles/images/spark.png');
+        }
+        #grass1{
+            background-image: url('/sitefiles/images/towerGrass1.png');
+        }
+        #grass2{
+            background-image: url('/sitefiles/images/towerGrass2.png');
+        }
+        #grass3{
+            background-image: url('/sitefiles/images/towerGrass3.png');
+        }
+        .grass{
+            position: absolute;
+            height: 20px;
+            background-size: 100% 100%;
+            z-index: 34;
+        }
+        #hanoicontrol{
+            position: fixed;
+            bottom: 150px;
+            left: 50%;
+            width: 20px;
+            height: 97px;
+            z-index: 35;
+        }
+        #reset{
+            bottom: 0;
+            background-image: url('/sitefiles/images/roadsignReset.png');
+            background-size: 100% 100%;
+            background-color: transparent;
+            position: absolute;
+            height: 20px;
+            width: 100%;
+        }
+        #less{
+            bottom: 30px;
+            background-image: url('/sitefiles/images/roadsignDown.png');
+            background-size: 100% 100%;
+            background-color: transparent;
+            position: absolute;
+            height: 20px;
+            width: 100%;
+        }
+        #number{
+            bottom: 55px;
+            font-family: 'Yeon Sung';font-size: 20px;
+            text-align: center;
+            color: gold;
+            background-color: transparent;
+            position: absolute;
+            height: 20px;
+            width: 100%;
+        }
+        #more{
+            bottom: 77px;
+            background-image: url('/sitefiles/images/roadsignUp.png');
+            background-size: 100% 100%;
+            background-color: transparent;
+            position: absolute;
+            height: 20px;
+            width: 100%;
+        }
+        .main{
+            height: auto;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            position: absolute;
+            top: 0;
+            width: auto;
+        }
+        .cover{
+            position: fixed;
+            opacity: 1;
+            background-color: rgba(0,0,0,.6);
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .cover.black{
+            background-color: rgba(0,0,0,.6);
+        }
+        .content{
+            position: relative;
+            z-index: 40;
+            margin-left: 120px;
+            margin-right: 120px;
+            margin-top: 100px;
+        }
+        .main .info-text, .main .subscribe .info-text{
+            color: #FFFFFF;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+            text-align: left;
+            margin-top: 50px;
+        }
+        .main .subscribe .info-text{
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .notes{
+            color: #FFFFFF;
+            overflow: auto;
+        }
+        .footer{
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+            width: 100%;
+            color: #AAAAAA;
+            z-index: 3;
+            text-align: right;
+            margin-top: 50px;
+            font-family: 'Grand Hotel',cursive;
+        }
+        .footer a{
+            color: #FFFFFF;
+        }
+        #bottom-edge{
+            position: fixed;
+            bottom: 0px;
+            font-size: 14px;
+            color: #AAAAAA;
+        }
+        .accordion {
+            display: none;
+        }
+        .section > .accordion {
+            display: block;
+        }
+        .accordion label {
+            cursor: pointer;
+            padding: 5px;
+        }
+        .accordion label.active:hover, .accordion label.active:focus {
+            background: #2C93FF;
+        }
+        .accordion .handle label.active:before {
+            content: url("/sitefiles/images/do.png");
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1em;
+            line-height: 1.556em;
+            vertical-align: middle;
+            transition: 0.4s;
+        }
+        .accordion .handle label.activated:before {
+            content: url("/sitefiles/images/dd.png");
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1em;
+            line-height: 1.556em;
+            vertical-align: middle;
+            transition: 0.4s;
+        }
+        .accordion .handle label.inactive:before {
+            content: url("/sitefiles/images/ds.png");
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1em;
+            line-height: 1.556em;
+            vertical-align: middle;
+            transition: 0.4s;
+        }
+        .section{
+            position: relative;
+        }
+        .slightspacer{
+            height: 1px;
+        }
+        @media (max-width:900px){
+            #deviceinfo{
+                display: none;
+            }
+        }
+        @media (max-width:1000px){
+            #bottom-edge{
+                display: none;
+            }
+        }
+        @media (max-width:1100px){
+            #map{
+                display: none;
+            }
+        }
+        @media (max-width:1000px){
+            #hanoi, #hanoicontrol{
+                display: none;
+            }
+        }
+        @media (min-width:900px){
+            .footer{
+                position: fixed;
+            }
+        }
+        @media (max-height:400px){
+            #deviceinfo{
+                display: none;
+            }
+        }
+        @media (max-height:500px){
+            #bottom-edge{
+                display: none;
+            }
+        }
+        @media (max-height:600px){
+            #map{
+                display: none;
+            }
+        }
+        @media (max-height:700px){
+            #hanoi, #hanoicontrol{
+                display: none;
+            }
+        }
+        @media (min-height:600px){
+            .footer{
+                position: fixed;
+            }
+        }

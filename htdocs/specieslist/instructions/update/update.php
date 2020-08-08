@@ -1,4 +1,3 @@
-<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><?php require '../../../include/head.php'; ?>
@@ -6,64 +5,93 @@
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
-        </div>
-        <div class="cover black" data-color="black"></div>
+        <?php require '../../../include/header.php'; ?>
         <div class="container">
             <div class="content">
-                <p><br/></p><p><br/></p><h2 class="notes">Species List Program update instructions</h2><p><br/></p>
-                <ol class="notes">
-                    <li class="notes">click on '<a href="/downloads/specieslist.zip">Species List Program (zip file)</a>' to download</li>
-                    <li class="notes">make note of download location, if you missed the location it's probably in the 'downloads' folder</li>    
-                    <li class="notes">move specieslist.zip to the folder where you want the program folder to be
-                        <ul>
-                            <li class="notes">can be anywhere</li>
-                            <li class="notes">suggest moving to the user folder (like 'Richard') or documents folder</li>
-                            <li class="notes">alternatively suggest moving to desktop</li>
-                        </ul>
-                    </li>
-                    <li class="notes">extract zipped folder contents to its own folder, to avoid clutter (again 'can' be anywhere)
-                        <ul>
-                            <li class="notes">right-click on specieslist.zip and select "extract all"</li>
-                            <li class="notes">'its own folder' means the program (sl.jar) should be contained in its own folder like '..\specieslist', not '..\Desktop'</li>
-                            <li class="notes">the 'extract all' process should do this automatically</li>
-                            <li class="notes">if you want to move the program later, the program (sl.jar) should not be moved by itself - instead move the folder</li>
-                        </ul>
-                    </li>
-                    <li class="notes">make sure <a href="https://java.com/en/" target="_blank">Java version 8 (or later)</a> is installed on your computer</li>
-                    <li class="notes">if needed, download a sample <a href="/downloads/sample.zip">masterlist file</a> for demonstration and/or testing
-                        <ul>
-                            <li class="notes">program needs a CSV masterlist file for initial load</li>
-                            <li class="notes">for real world use, a more current list should be used</li>
-                            <li class="notes">this 'samplemasterlist.csv' file is also zipped in a file called 'sample.zip', and might be in the 'downloads' folder</li>
-                            <li class="notes">'sample.zip' can be in any folder (doesn't matter) - right-click and select "extract all"</li>
-                            <li class="notes">'sample.zip' contains only 'samplemasterlist.csv' and doesn't matter where you extract it, but make note of where it is</li>
-                        </ul>
-                    </li>
-                    <li class="notes">*** optional ***   make a shortcut link for convenient access
-                        <ul>
-                            <li class="notes">right-click on the 'sl.jar' file and select 'Send to >> Desktop (create shortcut)'
-                                <ul>
-                                    <li class="notes">this will make shortcut link on the desktop</li>
-                                    <li class="notes">this shortcut can be moved and renamed</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="notes">*** if using the Excel macro ***  
-                        <ul>
-                            <li class="notes">after things have been moved around, make sure 'SLMacro.xlsm' is in the same folder as 'sl.jar'</li>
-                            <li class="notes">as an Excel security feature, downloaded excel macros have one-time warning - yellow ribbon at top of window
-                                <ul>
-                                    <li class="notes">click on 'enable content' to clear yellow ribbon(s) permanently for that file</li>
-                                    <li class="notes">close the file, Don't Save</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-                <p><br/></p><div class="subscribe"></div>
+                <h2>Species List Program update instructions</h2>
+                <div class="slightspacer"></div>
+                <div class="section">
+                    <section class="accordion">
+                        <h3 class="handle">program 'sl.jar' can be updated with the click of a button</h3>
+                    </section>
+                    <section class="accordion">
+                        <h3 class="handle"><label class="inactive">WARNING: any unsaved/unfinished work will be lost!</label></h3>
+                    </section>
+                    <section class="accordion">
+                        <h3 class="handle"><label class="active">click 'Update' button to start the updater program</label></h3>
+                        <div class="accontent">
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">button displays if a newer version has been released</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">'Update Is Available' is displayed if there is a newer version available</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="active">'Update Program' is displayed if there isn't a newer version</label></h5>
+                                        <div class="accontent">
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="inactive">can also be displayed if there is a communication problem with the server</label></h6>
+                                            </section>
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="active">an 'update' to the same version just reinstalls the program</label></h6>
+                                                <div class="accontent">
+                                                    <section class="accordion"><p>may want to do this if the program becomes corrupted and isn't working as expected (except for update button)</p></section>
+                                                    <section class="accordion"><p>settings will not be affected</p></section>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">updater program has two functions</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">update the program</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">restore the backup from a previous update</label></h5>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">several prompts will be given for different reasons</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">oppertunity to backout or reconsider</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">to choose whether to update or to restore a backup</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="active">to choose backup option before updating - program can only manage one backup at a time</label></h5>
+                                        <div class="accontent">
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="inactive">backup pre-update version, and overwrite previous backup (if any)</label></h6>
+                                            </section>
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="inactive">update without making backup, and save the existing backup</label></h6>
+                                            </section>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="accordion">
+                                <h5 class="handle"><label class="active">note: a restore is 'safer' than an update</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h6 class="handle"><label class="inactive">a restore backs up the existing program, allowing a 'restore' to that backup (circular)</label></h6>
+                                    </section>
+                                    <section class="accordion">
+                                        <h6 class="handle"><label class="inactive">an update introduces a new file, and a file is lost - depending on the chosen backup options</label></h6>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
             </div>
+            <p><br/></p><div class="subscribe"></div>
         </div>
         <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>

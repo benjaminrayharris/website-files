@@ -1,4 +1,3 @@
-<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><?php require '../../../include/head.php'; ?>
@@ -6,65 +5,54 @@
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
-        </div>
-        <div class="cover black" data-color="black"></div>
+        <?php require '../../../include/header.php'; ?>
         <div class="container">
             <div class="content">
-                <p><br/></p><p><br/></p><h2 class="notes">Species List Program Excel macro</h2>
-                <p class="notes">... for Windows users (Mac users will need to translate... sorry)</p><p><br/></p>
-                <ol class="notes">
-                    <li class="notes">click on '<a href="/downloads/specieslist.zip">Species List Program (zip file)</a>' to download</li>
-                    <li class="notes">make note of download location, if you missed the location it's probably in the 'downloads' folder</li>    
-                    <li class="notes">move specieslist.zip to the folder where you want the program folder to be
-                        <ul>
-                            <li class="notes">can be anywhere</li>
-                            <li class="notes">suggest moving to the user folder (like 'Ben') or documents folder</li>
-                            <li class="notes">alternatively suggest moving to desktop</li>
-                        </ul>
-                    </li>
-                    <li class="notes">extract zipped folder contents to its own folder, to avoid clutter (again 'can' be anywhere)
-                        <ul>
-                            <li class="notes">right-click on specieslist.zip and select "extract all"</li>
-                            <li class="notes">'its own folder' means the program (sl.jar) should be contained in its own folder like '..\specieslist', not '..\Desktop'</li>
-                            <li class="notes">the 'extract all' process should do this automatically</li>
-                            <li class="notes">if you want to move the program later, the program (sl.jar) should not be moved by itself - instead move the folder</li>
-                        </ul>
-                    </li>
-                    <li class="notes">make sure <a href="https://java.com/en/" target="_blank">Java version 8 (or later)</a> is installed on your computer</li>
-                    <li class="notes">if needed, download a sample <a href="/downloads/sample.zip">masterlist file</a> for demonstration and/or testing
-                        <ul>
-                            <li class="notes">program needs a CSV masterlist file for initial load</li>
-                            <li class="notes">for real world use, a more current list should be used</li>
-                            <li class="notes">this 'samplemasterlist.csv' file is also zipped in a file called 'sample.zip', and might be in the 'downloads' folder</li>
-                            <li class="notes">'sample.zip' can be in any folder (doesn't matter) - right-click and select "extract all"</li>
-                            <li class="notes">'sample.zip' contains only 'samplemasterlist.csv' and doesn't matter where you extract it, but make note of where it is</li>
-                        </ul>
-                    </li>
-                    <li class="notes">*** optional ***   make a shortcut link for convenient access
-                        <ul>
-                            <li class="notes">right-click on the 'sl.jar' file and select 'Send to >> Desktop (create shortcut)'
-                                <ul>
-                                    <li class="notes">this will make shortcut link on the desktop</li>
-                                    <li class="notes">this shortcut can be moved and renamed</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="notes">*** if using the Excel macro ***  
-                        <ul>
-                            <li class="notes">after things have been moved around, make sure 'SLMacro.xlsm' is in the same folder as 'sl.jar'</li>
-                            <li class="notes">as an Excel security feature, downloaded excel macros have one-time warning - yellow ribbon at top of window
-                                <ul>
-                                    <li class="notes">click on 'enable content' to clear yellow ribbon(s) permanently for that file</li>
-                                    <li class="notes">close the file, Don't Save</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-                <p><br/></p><div class="subscribe"></div>
+                <h2>Species List Program Excel macro</h2>
+                <div class="slightspacer"></div>
+                <div class="section">
+                    <section class="accordion">
+                        <h4 class="handle"><label class="inactive">optional compontent that formats the finished list as an Excel workbook</label></h4>
+                    </section>
+                    <section class="accordion">
+                        <h4 class="handle"><label class="inactive">requires Excel 2010 (part of Microsoft Office 2010) or later</label></h4>
+                    </section>
+                    <section class="accordion">
+                        <h4 class="handle"><label class="active">setup the macro before using</label></h4>
+                        <div class="accontent">
+                            <section class="accordion">
+                                <h5 class="handle"><label class="inactive">if things have been moved, make sure 'SLMacro.xlsm' is in the same folder as 'sl.jar'</label></h5>
+                            </section>
+                            <section class="accordion">
+                                <h5 class="handle"><label class="active">as an Excel security feature, downloaded excel macros have one-time warning</label></h5>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h6 class="handle"><label class="inactive">open the file by double clicking on it (normally this file isn't opened manually)</label></h6>
+                                    </section>
+                                    <section class="accordion">
+                                        <h6 class="handle"><label class="inactive">click on 'enable content' in the yellow ribbon(s) to clear warning for that file</label></h6>
+                                    </section>
+                                    <section class="accordion">
+                                        <h6 class="handle"><label class="inactive">close the file, Don't Save</label></h6>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="accordion">
+                        <h5 class="handle"><label class="active">note: save macro seperately</label></h5>
+                        <div class="accontent">
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">for saving file (header info), save before pressing button</label></h6>
+                            </section>
+                            <section class="accordion">
+                                <h6 class="handle"><label class="inactive">clicking button will close the file without saving</label></h6>
+                            </section>
+                        </div>
+                    </section>
+                </div>
             </div>
+            <p><br/></p><div class="subscribe"></div>
         </div>
         <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>

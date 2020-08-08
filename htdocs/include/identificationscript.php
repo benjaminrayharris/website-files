@@ -88,4 +88,6 @@
     $user_os = getOS();
     $user_browser = getBrowser();
     $device_details = "<strong>".$user_browser."</strong> on <strong>".$user_os."</strong>";
+
+
 ?>

@@ -1,4 +1,3 @@
-<?php require '../../../include/standardscript.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><?php require '../../../include/head.php'; ?>
@@ -6,44 +5,100 @@
 <body>
     <div class="main">
         <div id="path">&gt;&gt; <a href="/">Home</a> &gt;&gt; <a href="/specieslist">Species List</a> &gt;&gt; <a href="/specieslist/instructions">Instructions</a> &gt;&gt; </div>
-        <div id="socialmedialinks"><?php require '../../../include/navigation.php'; ?>
-        </div>
-        <div class="cover black" data-color="black"></div>
+        <?php require '../../../include/header.php'; ?>
         <div class="container">
             <div class="content">
-                <p><br/></p><p><br/></p><h2 class="notes">Species List Program initial masterlist file</h2><p><br/></p>
-                <p class="notes">Program needs a CSV masterlist file for initial load</p>
-                <p class="notes">There are two basic options:</p>
-                <ul class="notes">
-                    <li class="notes"></li>
-                    <li class="notes">current masterlist file
-                        <ul>
-                            <li class="notes">the masterlist file you've been using, or a file from a government/education/forestry/scientific entity</li>
-                            <li class="notes">must be formatted as a CSV (comma separated values) file
-                                <ol>
-                                    <li class="notes">back this file up (make a copy) first, just in case</li>
-                                    <li class="notes">if file is not a '.csv' file, open the file in Excel (or your favorite spreadsheet software)</li>
-                                    <li class="notes">select 'Save As', select CSV as the 'file type', name it, and save it</li>
-                                    <li class="notes">a prompt may pop up reminding that CSV can only have one (1) worksheet, select the correct sheet and continue</li>
-                                </ol>
-                            </li>
-                            <li class="notes">'its own folder' means the program (sl.jar) should be contained in its own folder like '..\specieslist', not '..\Desktop'</li>
-                            <li class="notes">if you want to move the program later, the program (sl.jar) should not be moved by itself - instead move the folder</li>
-                        </ul>
-                    </li>    
-                    <li class="notes"></li>
-                    <li class="notes">download a <a href="/downloads/sample.zip">sample masterlist file</a> for demonstration and/or testing
-                        <ul>
-                            <li class="notes"></li>
-                            <li class="notes">for real world use, a more current list should be used</li>
-                            <li class="notes">this 'samplemasterlist.csv' file is also zipped in a file called 'sample.zip', and might be in the 'downloads' folder</li>
-                            <li class="notes">'sample.zip' can be in any folder (doesn't matter) - right-click and select "extract all"</li>
-                            <li class="notes">'sample.zip' contains only 'samplemasterlist.csv' and doesn't matter where you extract it, but make note of where it is</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p><br/></p><div class="subscribe"></div>
+                <h2>Species List Program initial masterlist file</h2>
+                <div class="slightspacer"></div>
+                <div class="section">
+                    <section class="accordion">
+                        <h3 class="handle"><label class="active">program needs a CSV masterlist file for initial load</label></h3>
+                        <div class="accontent">
+                            <section class="accordion"><h4>there are two basic options:</h4></section>
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">current masterlist file</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">the masterlist file you've been using, or a file from a government/education/forestry/scientific entity</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="active">must be formatted as a CSV (comma separated values) file</label></h5>
+                                        <div class="accontent">
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="inactive">ideally, the columns are arranged with the unique fields first</label></h6>
+                                            </section>
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="inactive">back this file up (make a copy) first, just in case</label></h6>
+                                            </section>
+                                            <section class="accordion">
+                                                <h6 class="handle"><label class="active">change file to CSV format</label></h6>
+                                                <div class="accontent">
+                                                    <section class="accordion"><p>open the file in Excel (or your favorite spreadsheet software), go to the file menu and select 'Save As'</p></section>
+                                                    <section class="accordion"><p>choose a location, and make note of the location for the <a href="../firstrun">first use</a></p></section>
+                                                    <section class="accordion"><p>select CSV as the 'file type', name it, and save it</p></section>
+                                                    <section class="accordion"><p>a prompt may pop up reminding that CSV can only have one (1) worksheet, select the correct sheet and continue</p></section>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">a sample masterlist file for demonstration and/or testing</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">for real world use, a more current list should be used</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">download sample <a href="/download/sample.zip">here</a></label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="active">the 'samplemasterlist.csv' file is zipped in a file called 'sample.zip'</label></h5>
+                                        <div class="accontent">
+                                            <section class="accordion"><p>on downloading, sample.zip might automatically be put in the 'downloads' folder</p></section>
+                                            <section class="accordion"><p>sample.zip contains only 'samplemasterlist.csv'</p></section>
+                                            <section class="accordion"><p>sample.zip can be moved to any folder, or not</p></section>
+                                            <section class="accordion"><p>right-click on sample.zip and select "Extract All..."</p></section>
+                                            <section class="accordion"><p>does not matter where file is extracted to, but make note of the location for the <a href="../firstrun">first use</a></p></section>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="accordion">
+                        <h3 class="handle"><label class="active">masterlist CSV is normally used once</label></h3>
+                        <div class="accontent">
+                            <section class="accordion">
+                                <h4 class="handle">"abnormal" circumstances include:</h4>
+                            </section>
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">certain situations that require a reload</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">a re-install will require reload (or moving old program CSSL file into new install directory)</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">the program CSSL file is disturbed or not kept with program</label></h5>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="accordion">
+                                <h4 class="handle"><label class="active">user choice to load or reload a masterlist CSV file</label></h4>
+                                <div class="accontent">
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">some entry settings could be lost</label></h5>
+                                    </section>
+                                    <section class="accordion">
+                                        <h5 class="handle"><label class="inactive">will have to repeat some of the <a href="../firstrun">first time use</a> steps</label></h5>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
             </div>
+            <p><br/></p><div class="subscribe"></div>
         </div>
         <div class="footer"><?php require '../../../include/footer.php'; ?>
         </div>
